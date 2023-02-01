@@ -10,57 +10,8 @@ import Skills from '../components/Skills'
 import Contact from '../components/HomePageComponents/Contact'
 
 export default function Home() {
-    // Todo
-    // add some sort of cta at the end of this file
-    // animate floating nav (add scale and translate)
-    // add animations
-    // create new logo
-    // fix mobile nav scrolling with page
-    // improve mobile nav menu
-    // graph kinda thing to show which skills are linked (like obsidian)
-    // Maybe have skills section surrounding the graph
-    // create mouse tracking avatar on main page (https://www.youtube.com/watch?v=At6XyItIHsE)
-    // convert floating navbar css to tailwind
-    // convert timeline css to tailwind
-    // convert project tabs css to tailwind
-    // Add interactive nuggets widget in my portfolio page? / show stats and achievements of my nuggets widget add screenshots, etc...
-    // Make button styles consistent with all buttons
-    // Re-add CV download button somewhere in the page
-    // Write up all the sections of the site with placeholder content
-    // Polish and add email support in the contact page
-    // Maybe link skills to projects with their tags?
-    // create sliding in animation on the spinner on button component
-    // change black button focus outline to white
-    // handle form error
-    // Reverse or hide timeline in mobile
-    // Reverse timeline order in mobile if not hidden
-    // Make skills modal more readable   
-    // Show business card in mobile
-    
-    // ? Completed
-    // create skills componenet
-    // need cv preview and download page
-    // add github and mongodb to skills?
-    // fix smooth scroll issue
-    // make use of clsx
-    // change animaiton speeds
-    // convert buttons divs to button component
-    // hover over project tile should have a custom color done dynamically
-    // add floating navigation for home page
-    // fix nav links jittering
-    // add social links
-    // retake lakefront logo image without text and some extra whitespace and extra extra whitespace on top
-    // add hover and active animation to nav links and mobile nav links
-    // fix broken button component
-    // detect router change to determine whether to show or hide floating nav when switching back to home
-    // fix mobile nav menu
-    // update sidebar to show something else / maybe make slightly bigger (Timeline?)
-    // Animate timeline
-    // sort floating nav colors (hover color, active inside hover, bg color)
-    // get cv download button working
-    // pretty up the cv page
-    // perhaps seperate company and personal projects?
-    // fix languages breaking in banner in ProjectContainer component on mobile devices
+
+
 
 
 

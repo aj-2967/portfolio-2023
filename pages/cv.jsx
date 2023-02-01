@@ -1,11 +1,8 @@
-import { useState, useEffect, useRef, useCallback } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
+import Timeline from "../components/Timeline/Timeline";
 import page1 from "../public/assets/cv/cv-1.png";
 import page2 from "../public/assets/cv/cv-2.png";
-import Timeline from "../components/Timeline/Timeline";
-import Button from "../components/Button";
 
 const cv = () => {
 	return (
@@ -15,19 +12,19 @@ const cv = () => {
 					{/* CV description */}
 					<div className="md:col-span-2 flex flex-col">
 						<div className="w-full sticky top-[90px]">
-							<div className="flex justify-between border-b-4 pb-6 border-gray-500">
-								<h2 className="text-gray-700 mb-4 md:mb-0 flex items-center text-[26px] md:text-3xl">
-									About <span className="ml-2">Me</span>
+							<div className="flex justify-between items-end border-b-2 fixed top-0 bottom-[75%] left-0 w-full md:w-[40%] lg:w-[42%] bg-[#ECF0F3] z-10 p-4 lg:px-10">
+								<h2 className="text-gray-700 text-[26px] md:text-3xl">
+									About Me
 								</h2>
 
 								<a
-								// href="/assets/cv/cv_pdf.pdf"
-								// target="_blank"
-								// rel="noopener" 
-								// noreferrer="true"
-								// download="Ajaybir_Singh_CV.pdf"
+									href="/assets/cv/cv_pdf.pdf"
+									target="_blank"
+									rel="noopener"
+									noreferrer="true"
+									download="Ajaybir_Singh_CV.pdf"
 								>
-									<button className="capitalize py-2 px-2 rounded hover:scale-105 ease-in duration-75 active:scale-100">
+									<button className="capitalize py-2 px-2 rounded hover:scale-105 ease-in duration-75 active:scale-100 shadow">
 										Download CV
 									</button>
 								</a>

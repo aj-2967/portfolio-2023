@@ -128,7 +128,11 @@ const Navbar = () => {
 			</div>
 
 			{/* Mobile Nav Menu */}
-			<div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 !z-[1000]" : ""}>
+			<div
+				className={
+					nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 !z-[1000]" : ""
+				}
+			>
 				<div
 					className={clsx(
 						"fixed p-10 ease-in duration-300",
@@ -150,9 +154,7 @@ const Navbar = () => {
 							</div>
 						</div>
 						<div className="border-b border-gray-300 my-4">
-							<p className="w-[85%] md:w-[90%] py-4">
-								Let's build something legendary together.
-							</p>
+							<p className="w-[85%] md:w-[90%] py-4"></p>
 						</div>
 					</div>
 
