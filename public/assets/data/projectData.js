@@ -142,7 +142,7 @@ const projectData = [
 		demo: "example.com",
 		gradientOne: "#1d59b9",
 		gradientTwo: "#55a3df",
-		modaltitle: "AI Reply powered by chatGPT",
+		modaltitle: "AI review reply powered by ChatGPT 3",
 		modalText: ``,
 	},
 ];

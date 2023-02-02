@@ -48,8 +48,12 @@ const puffin = () => {
 	return (
 		<ProjectContainer
 			title="Puffin Group"
-			languages={["HTML", "CSS", "C#", "ASP .Net"]}
 			image={cover}
+			languages={["HTML", "CSS", "C#", "ASP .Net"]}
+			objectives={[
+				"Create an attractive and user-friendly e-commerce frontend",
+				"Create a login system in place for the client portal to access health statistics",
+			]}
 			overview="This was a project where I was required to
 						alongside another graduate to design and create a prototype
 						website for the company Future Care’s product, Puffin.
@@ -81,7 +85,10 @@ const puffin = () => {
 					<Tab.Panels className="mt-2 pt-4 border-t-2 border-gray-400 w-full">
 						{Object.values(thePuffinGroup).map(
 							({ id, title, image, description }, index) => (
-								<Tab.Panel key={index} className="rounded-xl p-3 flex flex-col lg:flex-row w-full justify-around">
+								<Tab.Panel
+									key={index}
+									className="rounded-xl p-3 flex flex-col lg:flex-row w-full justify-around"
+								>
 									<div className="lg:w-[60%]">
 										<Image src={image} alt={title} />
 									</div>

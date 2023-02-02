@@ -32,7 +32,7 @@ const nuggets = () => {
 			image: nugget4,
 			description: [
 				`With such a small form factor, there was potential in showcasing reviews in another, more prominent way. Namely, an inline or sticky bar at the top/ bottom of any client's page. The Nuggets Bar widget provides a more eye catching method of presenting reviews our clients are most proud of, potentially leading to an increased conversion of sales as this version of the widget can be more readily displayed on most or all of the pages on a site.`,
-				`The process of creating this widget used the same build file that contained the logic for the standard Nuggets widget. Which made it easier to share the same functionality and components required for this version. This hovever also presented a few challenges, such as being unable to distinguish between these two different versions, resulting in the wrong configs of the user's options and styles being injected into the wrong widgets, or being unable to render both versions of the widgets on the same page for a single user.`,
+				`The process of creating this widget used the same build file that contained the logic for the standard Nuggets widget. Which made it easier to share the same functionality and components required for this version. This hovever also presented a few challenges, such as being unable to distinguish between these two different versions, resulting in the wrong configs of the user's options and styles being injected into the wrong widgets, or being unable to render both versions of the widgets on the same page for a single user. But `,
 			],
 		},
 		"Nuggets Editor": {
@@ -63,6 +63,7 @@ const nuggets = () => {
 	return (
 		<ProjectContainer
 			title="Nuggets Widget"
+			image={cover}
 			languages={[
 				"HTML",
 				"CSS",
@@ -74,7 +75,13 @@ const nuggets = () => {
 				"Laravel",
 				"MySQL",
 			]}
-			image={cover}
+			objectives={[
+				"Create a reviews widget with mutliple style and option configurations",
+				"Create an interface in the dashboard to allow users to select their most relevant part of the review",
+				"Create an enpoint for the widget to call to display a review",
+				"Save and query the database for the added review snnippets",
+				"Create an editor for the widget to give users the control of how they want the widget to be styled",
+			]}
 			overview="The Review Nuggets Widget lets you draw the most value from a review by selecting a snippet of it to publish as standalone content - separating key sentiment from ‘noise’. You still get the same verified authenticity of the complete review, but you allow its most powerful words to shine."
 		>
 			<div className="w-full sm:px-0">

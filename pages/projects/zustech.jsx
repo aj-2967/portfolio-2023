@@ -52,15 +52,21 @@ const zustech = () => {
 	return (
 		<ProjectContainer
 			title="Zustech"
-			languages={["HTML", "SASS", "React"]}
 			image={cover}
+			languages={["HTML", "SASS", "React"]}
+			objectives={[
+				"Develop a user-friendly and interactive platform",
+				"Provide a wide range of courses across various categories",
+				"Enable users to track their progress",
+				"Provide a secure and efficient system for managing user accounts and course subscriptions",
+				"Offer an intuitive and responsive design",
+			]}
 			overview={`
 				Zustech Ltd is currently developing a learning
 				management system (LMS). On this platform once
-				completed, users after subscribing will be able to use
+				completed, users subscribing will be able to use
 				their membership to access and complete any course from
 				any given category.
-				
 				
 				My role as a Frontend React Developer was to work
 				closely with the team and the clients to develop the

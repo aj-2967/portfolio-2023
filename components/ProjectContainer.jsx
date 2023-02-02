@@ -3,7 +3,16 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Tag from "./Tag";
 
-const ProjectContainer = ({ title, image, languages, overview, demo, code, children }) => {
+const ProjectContainer = ({
+	title,
+	image,
+	languages,
+	overview,
+	objectives,
+	demo,
+	code,
+	children,
+}) => {
 	return (
 		<div className="w-full">
 			{/* Overlay */}
@@ -62,39 +71,21 @@ const ProjectContainer = ({ title, image, languages, overview, demo, code, child
 
 					{/* Right section */}
 					{overview && (
-						<div className="shadow-lg shadow-gray-400 bg-gray-200 rounded-xl p-4">
-							<div className="p-2">
-								<p className="text-center font-bold pb-2">Technologies</p>
-								{/* {languages &&
-									languages.map((lang, index) => (
-										<div
-											key={index}
-											className="grid grid-cols-3 md:grid-cols-1"
-										>
-											<p className="text-gray-600 py-2 flex items-center gap-1">
-												<RiRadioButtonFill />
-												{lang}
-											</p>
-										</div>
-									))} */}
-
-								<div className="grid grid-cols-3 md:grid-cols-1">
-									<p className="text-gray-600 py-2 flex items-center gap-1">
-										<RiRadioButtonFill />
-										HTML
-									</p>
-								</div>
-								<div className="grid grid-cols-3 md:grid-cols-1">
-									<p className="text-gray-600 py-2 flex items-center gap-1">
-										<RiRadioButtonFill />
-										CSS
-									</p>
-								</div>
-								<div className="grid grid-cols-3 md:grid-cols-1">
-									<p className="text-gray-600 py-2 flex items-center gap-1">
-										<RiRadioButtonFill />
-										JavaScript
-									</p>
+						<div className="w-full md:min-w-[200px] md:max-w-[350px]">
+							<div className="shadow-lg shadow-gray-400 bg-gray-200 rounded-xl p-4">
+								<div className="p-2">
+									<p className="text-center font-bold pb-2">Objectives</p>
+									{objectives &&
+										objectives.map((objective, index) => (
+											<div
+												key={index}
+											>
+												<p className="text-gray-600 py-2 flex items-center gap-1 text-[12px]">
+													{/* <RiRadioButtonFill /> */}
+													{objective}
+												</p>
+											</div>
+										))}
 								</div>
 							</div>
 						</div>
@@ -105,9 +96,12 @@ const ProjectContainer = ({ title, image, languages, overview, demo, code, child
 					<div className="my-20">{children}</div>
 
 					{/* Back button */}
+					<div className="flex">
 					<Link href="/#projects">
-						<p className="underline cursor-pointer mb-4">Back</p>
+						<p className="text-main cursor-pointer mb-4 border-2 border-main border-solid py-1 px-4 rounded">{'< '}Back</p>
 					</Link>
+
+					</div>
 				</div>
 			</div>
 		</div>
